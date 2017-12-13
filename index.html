@@ -62,9 +62,9 @@
                     шение! Для женщин стало престижно иметь не одни часы, а несколько.</p>
             </article>
             <div class="sidebar">
-                <form action="#" method="get">
-                    <label for="search-form"></label>
-                    <input type="search" name="search" id="search-form">
+                <form class="search-area">
+                    <label><input type="search" name="search"></label>
+                    <button class="search"></button>
                 </form>
                 <h2 class="news">Заголовок Н2 Новости</h2>
                 <ul>
@@ -89,13 +89,11 @@
                 </ul>
                 <a href="#">Все новости</a>
                 <div>
-                    <h2 class="subscribe">Подписка</h2>
-                    <form action="#" method="post">
-                        <label for="name-area">Имя</label>
-                        <input type="text" name="name" id="name-area">
-                        <label for="email-area">E-mail</label>
-                        <input type="email" name="email" id="email-area">
-                        <input type="submit" value="Подписаться" id="submit">
+                    <form>
+                        <div class="subscribe">Подписка</div>
+                        <label><input type="text" placeholder="Имя" name="name" id="name-area" required></label>
+                        <label><input type="email" placeholder="E-mail" name="email" id="email-area" required></label>
+                        <button type="submit" id="submit">Подписаться</button>
                     </form>
                 </div>
             </div>

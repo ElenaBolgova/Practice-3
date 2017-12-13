@@ -121,6 +121,21 @@ ol {
     margin: 66px 0 40px 55px;
 }
 
+/*#search-form {
+    background: url("../images/search.png") no-repeat 100% 0;
+    border: 1px solid #cacaca;
+}*/
+
+.search-area {
+    position: relative;
+}
+
+.search {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 .news {
     margin: 30px 0 25px 0;
     font-size: 24px;
@@ -157,6 +172,10 @@ time {
 
 #name-area {
     margin: 0 0 15px 0;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
 }
 
 #submit {
