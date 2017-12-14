@@ -25,7 +25,7 @@
             </div>
         </div>
         <nav>
-            <ul>
+            <ul class="wrapper-inner">
                 <li><a href="#">Каталог товаров</a></li>
                 <li><a href="#">Новинки</a></li>
                 <li><a href="#">Подарки</a></li>
@@ -38,10 +38,12 @@
     <main>
         <div class="wrapper-inner">
             <article class="content">
-                <nav>
-                    <a href="#">Главная</a>
-                    <a href="#">&raquo;</a>
-                    <a href="#">Следующая страница</a>
+                <nav class="content-nav">
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#"><img src="images/arrow.png" alt="next"></a></li>
+                        <li><a href="#">Следующая страница</a></li>
+                    </ul>
                 </nav>
                 <h1>Заголовок Н1 Новая коллекция ручных часов</h1>
                 <p>Наручные женские часы не только необходимость знания времени, но и элемент имиджа, предмет гордости, и украше-
@@ -53,7 +55,7 @@
                 <h4>Заголовок Н4</h4>
                 <p>Часы должны сочетаться с Вашим нарядом. Сплошная элегантность и роскошь, браслет и корпус инкрустированы стра-
                     зами, застежка простая:</p>
-                <ol>
+                <ol class="content-list">
                     <li>Модные женские часы в 2013 году;</li>
                     <li>Самый модный цвет 2013 года;</li>
                     <li>Часы женские с керамикой;</li>
@@ -62,9 +64,9 @@
                     шение! Для женщин стало престижно иметь не одни часы, а несколько.</p>
             </article>
             <div class="sidebar">
-                <form class="search-area">
+                <form class="search-area" data-title="Кто ищет - тот всегда найдет!">
                     <label><input type="search" name="search"></label>
-                    <button class="search"></button>
+                    <label><input type="image" id="search-icon" name="search-icon" src="images/search.png" alt="search"></label>
                 </form>
                 <h2 class="news">Заголовок Н2 Новости</h2>
                 <ul>
@@ -87,7 +89,7 @@
                         <div class="line"></div>
                     </li>
                 </ul>
-                <a href="#">Все новости</a>
+                <button type="button" class="all-news">Все новости</button>
                 <div>
                     <form>
                         <div class="subscribe">Подписка</div>
@@ -107,11 +109,11 @@
             </div>
             <div class="social-icon">
                 <a href="#">
-                    <img src="images/skype.png" alt="skype"></a>
+                    <img class="skype" src="images/skype.png" alt="skype"></a>
                 <a href="#">
-                    <img src="images/fb.png" alt="facebook"></a>
+                    <img class="facebook" src="images/fb.png" alt="facebook"></a>
                 <a href="#">
-                    <img src="images/twitter.png" alt="twitter"></a>
+                    <img class="twitter" src="images/twitter.png" alt="twitter"></a>
             </div>
         </div>
     </footer>
