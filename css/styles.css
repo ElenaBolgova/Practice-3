@@ -1,7 +1,7 @@
 @font-face {
-    font-family: 'Tahoma', "Arial";
+    font-family: "Tahoma", "Arial";
     src:
-            url('../../Fonts/Tahoma/Tahoma.ttf') format('truetype');
+            url("../../Fonts/Tahoma/Tahoma.ttf") format("truetype");
             url("../../Fonts/Arial/arial.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
@@ -175,6 +175,7 @@ input {
     height: 27px;
     border: 1px solid #c8c8c8;
     -webkit-border-radius: 3px;
+    padding: 0 24px 0 12px;
 }
 
 input::-webkit-search-cancel-button {
@@ -200,28 +201,29 @@ input:focus {
     z-index: 1;
     background: rgba(36, 181, 225, .3);
     border-radius: 3%;
-    font-size: 11px;
+    font-size: 10px;
     padding: 5px 10px;
 }
 
 #search-icon {
     position: absolute;
     top: 7px;
-    right: 7px;
+    right: -15px;
     width: 12px;
     height: 12px;
     border: none;
+    background: url("../images/search.png") no-repeat;
 }
 
-input[type="image"]:focus {
+#search-icon:focus {
     box-shadow: none;
     outline: none;
     transform: scale(1.2);
 }
 
 .news {
-    margin: 30px 0 25px;
-    font-size: 24px;
+    margin: 20px 0 15px;
+    font-size: 22px;
 }
 
 .news-link {
@@ -237,14 +239,14 @@ input[type="image"]:focus {
 
 time {
     display: block;
-    margin: 10px 0 0;
+    margin: 5px 0 0;
     font-size: 11px;
     color: #969696;
 }
 
 .preview {
     display: block;
-    margin: 0 0 20px;
+    margin: -10px 0 20px;
     font-size: 12px;
     text-align: justify;
 }
@@ -261,6 +263,7 @@ button {
     border: none;
     -webkit-border-radius: 2px;
     transition: .3s;
+    cursor: pointer;
 }
 
 button.all-news {
